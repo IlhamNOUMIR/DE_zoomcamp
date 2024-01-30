@@ -20,5 +20,5 @@
 
 ## Question 6. Data Exporting : 
 ### The number ofpartitions (folders) that are present in Google Cloud : 
--> 
+-> 96
 
