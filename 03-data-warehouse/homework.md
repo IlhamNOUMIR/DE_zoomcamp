@@ -49,7 +49,7 @@ SELECT * FROM `sylvan-ocean-411119.ny_taxi.external_green_cap_2022`;
 
 ##### Answer :  Partition by lpep_pickup_datetime Cluster on PUlocationID
 
-### Question 5 :
+### Question 5 : Write a query to retrieve the distinct PULocationID between lpep_pickup_datetime 06/01/2022 and 06/30/2022 (inclusive)
 
 ##### code : 
 SELECT DISTINCT(PULocationID)
@@ -61,3 +61,13 @@ FROM `sylvan-ocean-411119.ny_taxi.green_cap_2022_partionned_clustred`
 WHERE DATE(lpep_pickup_datetime) BETWEEN '2022-06-01' AND '2022-06-30';
 
 ##### Answer :  12.82 MB for non-partitioned table and 1.12 MB for the partitioned table
+
+
+### Question 6 : Where is the data stored in the External Table you created?
+
+##### Answer : GCP Bucket
+
+
+### Question 7 : It is best practice in Big Query to always cluster your data? 
+
+##### Answer : False 
