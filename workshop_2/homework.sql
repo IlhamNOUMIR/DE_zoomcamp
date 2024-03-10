@@ -15,7 +15,7 @@ JOIN
 JOIN
     taxi_zone tz2 ON td.dolocationid = tz2.location_id
 WHERE
-    td.tpep_dropoff_datetime > NOW() - INTERVAL '1 day' -- Adjust this filter according to your data freshness requirements
+    td.tpep_dropoff_datetime > NOW() - INTERVAL '1 minute' -- Adjust this filter according to your data freshness requirements
 AND
     tz1.zone != tz2.zone -- Exclude trips within the same zone
 GROUP BY
